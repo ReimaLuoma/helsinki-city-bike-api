@@ -1,12 +1,13 @@
 namespace BikeApp.Drivers;
 
+[Microsoft.EntityFrameworkCore.Keyless]
 public class Driver {
-    public string Departure {get;set;}
-    public string Return {get;set;}
-    public string DepartureStationId {get;set;}
-    public string DepartureStationName {get;set;}
-    public string ReturnStationId {get;set;}
-    public string ReturnStationName {get;set;}
+    public string Departure {get;set;} = null!;
+    public string Return {get;set;} = null!;
+    public string DepartureStationId {get;set;} = null!;
+    public string DepartureStationName {get;set;} = null!;
+    public string ReturnStationId {get;set;} = null!;
+    public string ReturnStationName {get;set;} = null!;
     public int CoveredDistance {get;set;}
     public int Duration {get;set;}
 }
